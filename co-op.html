@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="page-name" content="co-op">
+    <title>Mechatronics Class Profile 2022</title>
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script src="plotly.min.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Tron 2022 Class Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="demographics.html" id="demographics-link">Demographics</a>
+                <a class="nav-item nav-link" href="school.html" id="school-link">School</a>
+                <a class="nav-item nav-link" href="mental-health.html" id="mental-health-link">Mental Health</a>
+                <a class="nav-item nav-link" href="co-op.html" id="co-op-link">Co-op</a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container"><div class="row">
+    <h2>Test</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="11e926ea-f16c-4a55-aede-36850c0c30bb" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Test
+    </div>
+</div><div class="row">
+    <h2>Test</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="7544eb4e-0621-42b4-a6e5-b6ed45b582d3" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Test
+    </div>
+</div><div class="row">
+    <h2>Test</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="14ccca16-e4db-4518-86e7-4fd98a9b4c0e" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Test
+    </div>
+</div><div class="row">
+    <h2>Test</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="b6f1838e-b1d6-487b-8d50-979761095084" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Test
+    </div>
+</div><div class="row">
+    <h2>Test</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="94323386-8b13-49b6-9abd-49a94d234821" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Test
+    </div>
+</div><div class="row">
+    <h2>Test</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="325f57cf-0965-4f11-9e7b-3300094734a3" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Test
+    </div>
+</div><div class="row">
+    <div class="col-6 nav-link"><a href="#" id="previous-link">Previous</a></div>
+    <div class="col-6 nav-link"><a href="#" id="next-link">Next</a></div>
+</div>
+</div>
+
+</div>
+<script src="graphs.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script>
+    let filename = document.getElementsByName("page-name")[0].getAttribute("content");
+    document.getElementById(filename + "-link").classList.add("active");
+    let page_list = ["demographics", "school", "co-op", "mental-health"];
+    let index = page_list.indexOf(filename);
+
+    let prev_link = page_list[index - 1];
+    let prev_element = document.getElementById("previous-link");
+    let next_link = page_list[index + 1];
+    let next_element = document.getElementById("next-link");
+
+
+    if (prev_link === undefined) {
+        prev_element.style.visibility = "hidden";
+    } else {
+        prev_element.href = prev_link + ".html"
+        prev_element.innerHTML = prev_link;
+    }
+
+    if (next_link === undefined) {
+        next_element.style.visibility = "hidden";
+    } else {
+        next_element.href = next_link + ".html"
+        next_element.innerHTML = next_link;
+    }
+
+</script>
+
+</body>
+
+</html>
