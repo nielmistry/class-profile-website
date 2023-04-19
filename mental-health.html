@@ -28,6 +28,7 @@
                 <a class="nav-item nav-link" href="demographics.html" id="demographics-link">Demographics</a>
                 <a class="nav-item nav-link" href="school.html" id="school-link">School</a>
                 <a class="nav-item nav-link" href="mental-health.html" id="mental-health-link">Mental Health</a>
+                <a class="nav-item nav-link" href="lifestyle.html" id="lifestyle-link">Lifestyle</a>
                 <a class="nav-item nav-link" href="co-op.html" id="co-op-link">Co-op</a>
 
             </div>
@@ -36,15 +37,23 @@
     <div class="container"><div class="row">
     <h2>Mental Health Conditions</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="9a82e878-4ea8-4a4a-990a-744f5f151d66" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="6629c8d1-3ef8-4672-ac87-4ebae0e2343a" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Comments
     </div>
 </div><div class="row">
+    <h2>Primary Cause of Depression and Anxiety</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="c92d959f-873c-47a0-98a5-336861eee5fd" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        For people who had depression or anxiety, most people attributed academics as the main cause. Relationships was the second most attributed cause, followed by others
+    </div>
+</div><div class="row">
     <h2>Mental Health by Gender</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="ad23a37e-11c2-4e93-9823-73372bd4311a" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="2f5348ff-851c-4c45-ab51-aec400efc808" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Females had a higher average of mental health issues than males
@@ -52,10 +61,18 @@
 </div><div class="row">
     <h2>Mental Health Supports Seeked</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="0f0c5eaf-be55-4435-9f1c-b98d97f83856" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="0f2b8275-9bd4-42c3-940d-d2d77bddb53f" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         test
+    </div>
+</div><div class="row">
+    <h2>Does UW Provide Sufficient Mental Health Supports?</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="ecf4692b-9af1-4387-92ee-ebbe42b8c9bc" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        hadfha
     </div>
 </div><div class="row">
     <div class="col-6 nav-link"><a href="#" id="previous-link">Previous</a></div>
@@ -78,7 +95,7 @@
 <script>
     let filename = document.getElementsByName("page-name")[0].getAttribute("content");
     document.getElementById(filename + "-link").classList.add("active");
-    let page_list = ["demographics", "school", "co-op", "mental-health"];
+    let page_list = ["demographics", "school", "mental-health", "lifestyle", "co-op"];
     let index = page_list.indexOf(filename);
 
     let prev_link = page_list[index - 1];
