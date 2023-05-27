@@ -1,40 +1,82 @@
+/* Set font families */
+body {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Adjust graph section layout */
 .graph-section {
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+
 }
 
+/* Adjust graph wrapper styles */
 .graph-wrapper {
     height: 30em;
+    background-color: #fff;
+    border-right: 1px dashed #ccc;
+    padding-right: 1em;
+    padding-left: 1em;
+
+    /* White background for the graph wrapper */
 }
 
+/* Adjust graph writeup styles */
 .graph-writeup {
-    padding-left: 2em;
-    padding-top: 0.5em;
-    color: red;
+    background-color: #eee;
+    /* Set the background color to lightgray or any color you prefer */
+    color: #333;
+    align-self: stretch;
+    /* Make the element stretch to fill the height of the row */
+    padding: 1em;
+    /* Add padding for better readability */
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
+
+/* Override the rounded corners for mobile screens */
+@media (max-width: 768px) {
+    .graph-writeup {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .graph-wrapper {
+        border-right: none;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 1em;
+    }
+}
+
+/* Adjust row styles */
 .row {
     padding: 10px;
+    border-bottom: 2px solid #a5a1a1;
+    /* Add a 1px solid line at the bottom of each row */
 }
 
-.row:nth-child(odd) {
-    background-color: hwb(0 100% 0%)
-}
 
-.row:nth-child(even) {
-    background-color: hwb(0 93% 7%);
-}
-
+/* Set body background color */
 body {
-    background-color: #ffebcc;
-
+    background-color: #f9f9f9;
+    /* Subtle off-white background */
 }
 
+/* Adjust navbar brand padding */
 .navbar-brand {
     padding-left: 20px;
 }
 
+/* Capitalize first letter of nav links */
 .nav-link::first-letter {
     text-transform: capitalize;
 }
