@@ -1,10 +1,10 @@
 /* Set font families */
 body {
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Noto Serif', serif;
 }
 
 h2 {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Noto Serif', serif;
 }
 
 /* Adjust graph section layout */
@@ -37,9 +37,12 @@ h2 {
     padding: 1em;
     /* Add padding for better readability */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2em;
+    size: 1.2em;
 }
 
 
@@ -54,6 +57,11 @@ h2 {
         border-right: none;
         border-bottom: 1px dashed #ccc;
         padding-bottom: 1em;
+    }
+
+    /* Give some margin for nav-items when they're in the dropdown! */
+    .nav-item {
+        margin-left: 22px;
     }
 }
 
@@ -74,9 +82,14 @@ body {
 /* Adjust navbar brand padding */
 .navbar-brand {
     padding-left: 20px;
+    font-family: 'Noto Serif', serif;
 }
 
 /* Capitalize first letter of nav links */
 .nav-link::first-letter {
     text-transform: capitalize;
+}
+
+.navbar-toggler {
+    margin-right: 10px;
 }
