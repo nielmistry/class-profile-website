@@ -93,3 +93,8 @@ body {
 .navbar-toggler {
     margin-right: 10px;
 }
+
+.preamble {
+    background-color: #a5a1a1;
+    font-family: 'Noto', 'sans-serif';
+}
