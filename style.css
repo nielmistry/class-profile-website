@@ -18,7 +18,9 @@ h2 {
 
 /* Adjust graph wrapper styles */
 .graph-wrapper {
-    height: 30em;
+    /* height: 40em; */
+    min-height: 30em;
+    max-height: none;
     background-color: #fff;
     border-right: 1px dashed #ccc;
     padding-right: 1em;
@@ -33,16 +35,21 @@ h2 {
     /* Set the background color to lightgray or any color you prefer */
     color: #333;
     align-self: stretch;
+    font-size: 20px;
     /* Make the element stretch to fill the height of the row */
     padding: 1em;
     /* Add padding for better readability */
-    display: flex;
+    /* display: flex; */
     /* align-items: center; */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     font-family: 'Poppins', sans-serif;
     line-height: 2em;
     size: 1.2em;
+}
+
+.mobile-warning {
+    visibility: hidden;
 }
 
 
@@ -62,6 +69,11 @@ h2 {
     /* Give some margin for nav-items when they're in the dropdown! */
     .nav-item {
         margin-left: 22px;
+    }
+
+    .mobile-warning {
+        visibility: visible;
+
     }
 }
 
@@ -97,4 +109,9 @@ body {
 .preamble {
     background-color: #a5a1a1;
     font-family: 'Noto', 'sans-serif';
+}
+
+.index-row {
+    /* height: ; */
+
 }
