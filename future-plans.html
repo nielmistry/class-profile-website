@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -31,7 +31,7 @@
         crossorigin="anonymous"></script>
 
     <script src="plotly.min.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">Tron 2022 Class Profile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
         </div><div class="row">
     <h2>One-Year Outlook</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="f6254ab9-ddfc-4096-a140-0744d3b434c2" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_oneYearOutlook" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         80% of people thought they'd be working full time one year from when they submitted the survey, with most of those people already having a job lined up
@@ -64,7 +64,7 @@
 </div><div class="row">
     <h2>Full-time Job Employment Arrangement</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="d60e1c30-7159-4e9a-999f-93e2c6adb592" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_ft_employmentArrangement" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         The vast majority of Trons signed normal full-time job employment agreements
@@ -72,7 +72,7 @@
 </div><div class="row">
     <h2>Full Time Job: Was it a previous co-op?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="f0e316f0-c3ef-4c68-8e80-f8fb1c33a0fb" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_ft_wasCoopJob" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Not only does the co-op program help develop skills for the workforce, 60% of respondents also returned to a co-op employee for a full time job after graduating!
@@ -88,7 +88,7 @@
 </div><div class="row">
     <h2>Full-Time Type of Work</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="be4975e7-b562-4b72-ab88-17f952f902fe" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_ft_typeOfWork" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Most of us are doing some kind of software, but there is a sizable amount of other responsibilities
@@ -96,7 +96,7 @@
 </div><div class="row">
     <h2>Full Time Job: Why'd you pick it?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="2feeb7ad-a1c9-4608-a608-404a13314b25" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_ft_whyThisJob" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Not much more to say about this one
@@ -104,7 +104,7 @@
 </div><div class="row">
     <h2>Full Time Job: Salaries</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="0f963693-457f-464f-8986-a5afc64cbcc5" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_ft_salary_filtered" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         There's a pretty large distribution here, probably because of location
@@ -112,7 +112,7 @@
 </div><div class="row">
     <h2>Full Time Job: Total Compensation (CAD) vs. Location</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="9238bb64-f76c-4329-9269-c0e9fcea184e" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_ft_jobLocationvsfut_ft_total_comp" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Someone in Ontario got crazy equity!
@@ -120,7 +120,7 @@
 </div><div class="row">
     <h2>Full Time Job: Compensation vs. Gender</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="8e19378d-5bc0-48e4-9fdd-7a35ef627a33" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="gender_vs_ft_comp" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         The pay gap re-emerges 😔
@@ -128,7 +128,7 @@
 </div><div class="row">
     <h2>Full Time Job: Cumulative Universaty Average vs. Salary</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="e43d075e-5c47-4570-95a2-4e1dcfcc57a7" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="roundedToFiveUniversityAveragevsfut_ft_salary" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Surprisingly, there's a good correlation between university average and full time pay!
@@ -136,7 +136,7 @@
 </div><div class="row">
     <h2>Full-time Job Location</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="5fbab04a-2386-47cd-8ac2-b7d3385e2a84" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_ft_jobLocation" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         For people who've had a full time job lined up, the highest concentration of people are in California. A sizeable portion of us are in the GTA and BC as well.
@@ -144,7 +144,7 @@
 </div><div class="row">
     <h2>Working Abroad: Why did you leave Canada?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="0a097e1c-8884-4207-95cd-240a025d057f" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_ft_whyLeaveCanada" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         The brain drain is evident here, many of our smart colleagues left Canada because of better compensation south of the border.
@@ -152,7 +152,7 @@
 </div><div class="row">
     <h2>Working Abroad: Would you return to Canada sometime?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="cb8f5832-085a-4c07-a87c-9aafa13e269f" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_ft_returnToCanada" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Most people want to return to Canada after working abroad 🇨🇦
@@ -160,7 +160,7 @@
 </div><div class="row">
     <h2>Higher Education Completed After Ten Years</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="16a2ffed-7331-401b-9df0-1fe220d649cf" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_higherEducationTenYears" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         The amount of people who don't want anything to do with school and the number of people who want to do a masters in engineering is roughly equal
@@ -168,7 +168,7 @@
 </div><div class="row">
     <h2>Tron Friends After Ten Years</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="0c61aa32-77cf-4073-bb8d-630aacd91482" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_friendsTronTenYears" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Most people thought they'd be friends with at least a person from Tron in ten years!
@@ -176,7 +176,7 @@
 </div><div class="row">
     <h2>Marriage Age</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="c294374f-7904-4ae3-96fd-f42c6e650520" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_marriageAge" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         The vast majority of people would like to get married in the future, with most aiming for between 25-30
@@ -184,14 +184,17 @@
 </div><div class="row">
     <h2>Children Age</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="40dc46da-7318-4079-ab7b-ac5115bb61cf" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="fut_kidsAge" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         There is more variability in when and if people want children. 13% of people don't plan to have kids at all.
     </div>
 </div><div class="row">
-    <div class="col-6 nav-link"><a href="#" id="previous-link">Previous</a></div>
-    <div class="col-6 nav-link"><a href="#" id="next-link">Next</a></div>
+    <div class="col-1 nav-link"><a href="#" id="previous-link">Previous</a></div>
+    <div class="col-10" style="text-align:center">Patch: <span class="patch">019f97a-dirty
+</span></div>
+    <div class=" col-1 nav-link"><a href="#" id="next-link">Next</a></div>
+
 </div>
 </div>
 

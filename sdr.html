@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -31,7 +31,7 @@
         crossorigin="anonymous"></script>
 
     <script src="plotly.min.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">Tron 2022 Class Profile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
         </div><div class="row">
     <h2>Number of Relationships During Degree</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="56c67b0a-06e7-4dd4-a831-8a2cbd946471" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="numberOfRelationships" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         The class of 2020 had more people in two relationships than us, maybe another COVID effect?
@@ -64,7 +64,7 @@
 </div><div class="row">
     <h2>Where'd you meet your SO?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="0061f5d5-68a4-4639-be27-a6cc583fe4a3" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="SOMeeting" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Other than the single people, the single most common place to meet your SO was high school!
@@ -72,7 +72,7 @@
 </div><div class="row">
     <h2>Time in University Career in Relationship</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="37ed5735-3a1d-4062-a956-ddcfa5c2e20c" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="timeInRelationship" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Pretty wide distribution here.
@@ -80,7 +80,7 @@
 </div><div class="row">
     <h2>When did you loose your virginity?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="0ef86edd-6774-4f28-9442-fd3896fd447b" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="virginityLostTime" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         As the years went on, the number of people loosing their virginity decreased. Still, there were more than 30 graduating virigns who responded!
@@ -88,15 +88,23 @@
 </div><div class="row">
     <h2>Unique Sexual Partners</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="a61fbf6c-4afd-4474-8b1b-fb010e8b28b6" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="uniqueSexualPartners" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Talk about a long tail...
     </div>
 </div><div class="row">
+    <h2>Unique Sexual Partners by Gender</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="genderComp_uniqueSexualPartners" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        On average, males had a statistically insignificant higher number of sexual partners
+    </div>
+</div><div class="row">
     <h2>Troncest?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="06e61f8e-70c1-4ab3-8b60-7f91f3d0decc" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="troncest" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Did you date anyone in our class?
@@ -104,7 +112,7 @@
 </div><div class="row">
     <h2>Wishful Troncest?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="4be0010d-eb43-4e00-ae1b-1424eb3f5aa4" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="wishfulTroncest" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Did you want to?
@@ -112,7 +120,7 @@
 </div><div class="row">
     <h2>Drugs Taken: Before and After University</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="43a84f86-a98c-4e38-aa72-9c211e708f26" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="beforeUni_Drugs" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         People were adventerous during university. Many of us tried Marijuana for the first time, probably some of it because it became legal in Canada while we were in university.
@@ -120,7 +128,7 @@
 </div><div class="row">
     <h2>Alcohol Use First Year vs. Fourth Year</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="e2ed03fc-34cf-48c0-bbbf-70cdb5e54c50" class="plotly-graph-div" style="height:800px; width:100%;"></div>
+        <div id="yearComps_Alcohol" class="plotly-graph-div" style="height:800px; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Alcohol use increased from first year to fourth year, the legality probably contributing
@@ -128,14 +136,17 @@
 </div><div class="row">
     <h2>Cannabis Use First Year vs. Fourth Year</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="de130a99-8481-40ee-a1e1-c6ee4590d5fb" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="yearComps_Cannabis" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Cannabis use also increased from first year to fourth year
     </div>
 </div><div class="row">
-    <div class="col-6 nav-link"><a href="#" id="previous-link">Previous</a></div>
-    <div class="col-6 nav-link"><a href="#" id="next-link">Next</a></div>
+    <div class="col-1 nav-link"><a href="#" id="previous-link">Previous</a></div>
+    <div class="col-10" style="text-align:center">Patch: <span class="patch">019f97a-dirty
+</span></div>
+    <div class=" col-1 nav-link"><a href="#" id="next-link">Next</a></div>
+
 </div>
 </div>
 

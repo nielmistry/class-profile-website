@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -31,7 +31,7 @@
         crossorigin="anonymous"></script>
 
     <script src="plotly.min.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">Tron 2022 Class Profile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
         </div><div class="row">
     <h2>First Year Living</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="3a235e5e-6d88-4a59-ad7c-dbb2b60804ec" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="firstYearLiving" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         A lot of us lived off-campus in first year! There were significant amounts of people living in the UWP area, and less respondants who lived in REV/MKV.
@@ -64,7 +64,7 @@
 </div><div class="row">
     <h2>High School vs. University Average</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="52995784-8e0c-4645-95ee-3702e25f9d10" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="highSchoolVsUniversityAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         There's a slight positive correlation between the high school average and cumulative university average
@@ -72,7 +72,7 @@
 </div><div class="row">
     <h2>Cumulative University Average Distribution</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="67de8a2c-9a0c-4249-9bac-c0c0666af218" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="cumulativeUniversityAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         The mean cumulative average was 83%
@@ -80,7 +80,7 @@
 </div><div class="row">
     <h2>Averages by Term</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="2ea685c9-ceff-4757-91b3-4dda0b7d8042" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="school_avg" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         The 3B and onward bottom fences got significantly better... Probably due to COVID
@@ -88,7 +88,7 @@
 </div><div class="row">
     <h2>Lecture Attendance by Term</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="170e8284-6fcf-474a-a5a6-3ca4fb965d79" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="1A__lecAttendance" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Oh the steady climb of truancy... 3B probably shouldn't count here because of COVID
@@ -96,7 +96,7 @@
 </div><div class="row">
     <h2>Tutorial Attendance by Term</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="15820333-e8ba-4ffd-be70-69baab2526a6" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="1A__tutAttendance" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         This is even more dramatic, probably because there weren't marks for attendance in tutorials after 1A
@@ -104,7 +104,7 @@
 </div><div class="row">
     <h2>Workload by Term</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="32d466b6-47e3-4fec-b509-ddf7d7b3c7ce" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="1A__workload" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         2B...
@@ -112,7 +112,7 @@
 </div><div class="row">
     <h2>Stress by Term</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="b6e7f3df-cb12-43ac-9e6f-413418211a95" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="1A__stress" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Unsurprising here
@@ -120,7 +120,7 @@
 </div><div class="row">
     <h2>Number of Failed Projects</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="84b3c0a8-a88b-4dde-94ec-53df245c0be1" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="numFailedProjects" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Failing a project was uncommon
@@ -128,7 +128,7 @@
 </div><div class="row">
     <h2>Number of Failed Midterms</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="8d510cc1-809f-414c-b62a-57fb98d74cca" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="numFailedMidterms" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Close to 50% of the respondents failed at least one midterm
@@ -136,7 +136,7 @@
 </div><div class="row">
     <h2>Number of Failed Finals</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="992ba921-85e4-4182-8398-fb009c9d438c" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="numFailedFinals" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         And around 35% of the respondents failed at least one final
@@ -144,7 +144,7 @@
 </div><div class="row">
     <h2>Number of Failed Courses</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="a74e2057-537c-4f4e-b727-4aad0453e5df" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="numFailedCourses" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Twelve respondents failed at least one course, but still made it through the program!
@@ -152,7 +152,7 @@
 </div><div class="row">
     <h2>Number of Failed Terms</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="37cc9d73-b7f1-4d19-be8c-a0c3ffdb1426" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="numFailedTerms" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         A few people failed some terms, but still made it through!
@@ -160,7 +160,7 @@
 </div><div class="row">
     <h2>Work Ethic</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="03630ab1-27d9-4392-8890-dce8f4090326" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="yearComps_WorkEthic" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         📉
@@ -168,7 +168,7 @@
 </div><div class="row">
     <h2>Notetaking Habits</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="baf6fca1-1e75-4bb7-b25e-072a2c83583c" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="yearComps_NoteTaking" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Notetaking dramatically decreased between first and fourth year with close to 20% of respondents not taking notes in fourth year. There was a significant rise in people who used digital notetaking tools as well
@@ -176,7 +176,7 @@
 </div><div class="row">
     <h2>How much did you keep up with classes?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="8137882a-531c-4a94-8951-b0bcd4235eb0" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="yearComps_CourseKeepup" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         TODO
@@ -184,7 +184,7 @@
 </div><div class="row">
     <h2>Projects?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="3165ce58-c905-4859-a548-5f932431debe" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="yearComps_ProjectHabit" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         TODO
@@ -192,7 +192,7 @@
 </div><div class="row">
     <h2>Exam Study Habits</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="afc299f9-ccfd-4bac-ba2a-ebf764da7e14" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="yearComps_ExamStudyHabit" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Exam Prepardness slightly decreased from first year to fourth year as well.
@@ -200,7 +200,7 @@
 </div><div class="row">
     <h2>Satisfaction with Tron</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="bd86baa1-d5b4-4e3d-aeec-0100bafb15d6" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="tronSatisfaction" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Test
@@ -208,7 +208,7 @@
 </div><div class="row">
     <h2>Satisfaction with Tron vs. Average</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="0d270132-3dc4-405d-b0cc-54a88f2a28f9" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="satisfactionVsAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Test
@@ -216,7 +216,7 @@
 </div><div class="row">
     <h2>Parental Education vs. Average</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="342727f8-b2b1-454a-bc25-a4b229661ba2" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="parentalEducationvscumulativeUniversityAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Test
@@ -224,7 +224,7 @@
 </div><div class="row">
     <h2>Family Income vs. Average</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="2d8dd8fb-8e63-450c-bba0-ef601fcba6c2" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="famIncomeVsAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Test
@@ -232,7 +232,7 @@
 </div><div class="row">
     <h2>Would You Choose Tron Again?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="b5555c9c-de0d-4fe4-9257-d17dd8bf91d2" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="chooseTronNotKnowing" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Test
@@ -240,7 +240,7 @@
 </div><div class="row">
     <h2>What Program Would You Do Instead of Tron?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="46abcdb0-72e8-43e5-8ed2-9c7a222168a3" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="noTronOtherProgram" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Test
@@ -256,7 +256,7 @@
 </div><div class="row">
     <h2>Was your FYDP only Mechatronics Students?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="0845584c-9f41-4ae4-9a44-957b0d5a434f" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="4A_fydpOnlyTron" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Test
@@ -264,7 +264,7 @@
 </div><div class="row">
     <h2>Pride vs. Care</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="cc37e2c3-b8a9-4b92-b74c-3f5c05e9b338" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="4B_fydpPridevs4B_fydpCare" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Test
@@ -272,7 +272,7 @@
 </div><div class="row">
     <h2>Did you plan to go on exchange?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="6522fe7a-0c72-4f54-a857-6b6ee4b178aa" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="exchange_plan" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         Test
@@ -280,7 +280,7 @@
 </div><div class="row">
     <h2>Planned Exchange: Did You End up Going?</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="82af3d26-2ce3-4952-95b2-1aca8acc854b" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="exchange_actuallyWent" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
         COVID
@@ -310,8 +310,11 @@
         We took a lot of different electives! We have a lot of different interests outside of Tron, but our top five were: <ol><li>MUSIC 140: Popular Music and Culture</li> <li>MUSIC 246: Soundtracks: Music in Film</li> <li>ECE 459: Programming for Perfomance</li> <li>SYDE 556: Simulating Neurobiological Systems</li>  <li>ECE 488: Multivariable Control Systems</li></ol>
     </div>
 </div><div class="row">
-    <div class="col-6 nav-link"><a href="#" id="previous-link">Previous</a></div>
-    <div class="col-6 nav-link"><a href="#" id="next-link">Next</a></div>
+    <div class="col-1 nav-link"><a href="#" id="previous-link">Previous</a></div>
+    <div class="col-10" style="text-align:center">Patch: <span class="patch">019f97a-dirty
+</span></div>
+    <div class=" col-1 nav-link"><a href="#" id="next-link">Next</a></div>
+
 </div>
 </div>
 
