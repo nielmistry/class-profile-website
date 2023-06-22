@@ -32,9 +32,9 @@ h2 {
 
 /* Adjust graph writeup styles */
 .graph-writeup {
-    background-color: #333333;
+    background-color: #ccc;
     /* Set the background color to lightgray or any color you prefer */
-    color: #dfdfdf;
+    color: #333;
     align-self: stretch;
     font-size: 20px;
     /* Make the element stretch to fill the height of the row */
