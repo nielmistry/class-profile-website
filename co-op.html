@@ -39,22 +39,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="demographics.html" id="demographics-link">Demographics</a>
-                <a class="nav-item nav-link" href="school.html" id="school-link">School</a>
-                <a class="nav-item nav-link" href="mental-health.html" id="mental-health-link">Mental Health</a>
-                <a class="nav-item nav-link" href="lifestyle.html" id="lifestyle-link">Lifestyle</a>
-                <a class="nav-item nav-link" href="sdr.html" id="sdr-link">Sex, Drugs & Relationships</a>
-                <a class="nav-item nav-link" href="co-op.html" id="co-op-link">Co-op</a>
-                <a class="nav-item nav-link" href="future-plans.html" id="future-plans-link">Future Plans</a>
+            <div class="navbar-nav" id="topNavBar">
+
 
             </div>
         </div>
     </nav>
+
     <div class="container">
         <div class="alert alert-warning mobile-warning">
             View this website on desktop for the best experience!
-        </div><div class="row">
+        </div><div class="row border-row">
     <h2>Did you do a co-op placement this term?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="coop1__started" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -62,7 +57,23 @@
     <div class="col-md-4 graph-writeup">
         3-5% of respondents didn't do a co-op placement between terms 3 and 6. The University reduced the minimum required co-op terms required to graduate from five to four, and then further to three because of COVID. 
     </div>
-</div><div class="row">
+</div><div class="row border-row">
+    <h2>Were you ever late to an interview?</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="coop_lateToInterview" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Around 20% of people were late to at least one co-op interview.
+    </div>
+</div><div class="row border-row">
+    <h2>Did you ever miss an interview?</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="coop_missedInterview" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Slightly less people outright missed at least one interview and faced the wrath of CECA.
+    </div>
+</div><div class="row border-row">
     <h2>Cumulative Average vs. Hourly Pay</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="Cumulative_Average_vs_Hourly_Pay" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -70,23 +81,23 @@
     <div class="col-md-4 graph-writeup">
         This interesting trend continues from the 2020 class profile where students who had the lowest cumulative grades had the highest pay for the first work term. The trend reverses by the fifth and sixth co-op and there's a weak positive relationship between grades and pay.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Co-op Hourly Salaries (CAD)</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="coop_hourlyPay" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
-        As students got more experienced, the amount they got remunerated increased as well
+        As students got more experienced, their renumeration increased as well.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Gender vs. Co-op Pay</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="gender_vs_coop_pay" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
-        A pleasant surprise! For the most part, the average male and female salaries were equal to each other. This is excellent news, but the full time salaries did have a significant difference as visible on the Future Plans page
+        A pleasant surprise! For the most part, the average male and female salaries were equal to each other. This is excellent news, but the full time salaries did have a significant difference as visible on the <a href='future-plans.html'>Future Plans page</a>
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Pay by Type of Work over Co-op Terms</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="Average_Pay_vs._Type_of_Work_per_Co-op_Term" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -94,7 +105,7 @@
     <div class="col-md-4 graph-writeup">
         Since people had co-ops where they performed more than one type of work, the salary for those positions are included in all the different types of work that they did. Therefore, if someone made $35/hour doing firmware and hardware work, the averages for both firmware and electrical include an entry for $35
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>How much does the type of work you do affect salary?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="How_much_does_each_type_of_work_affect_salary" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -102,7 +113,7 @@
     <div class="col-md-4 graph-writeup">
         This is a crude multiple regression to find what effect different types of work has on salary. Take these data with a grain of salt, but positive numbers mean that it generally increased your salary compared to the average if you were doing that kind of work, and negative numbers means it decreased your salary to do that kind of work. Overall, Robotics, ML/AI and Product Management were typically associated with higher salaries. The fifth co-op term weird things happened where some trends reversed
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Co-op Hours Per Week</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="coop_hoursPerWeek" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -110,7 +121,7 @@
     <div class="col-md-4 graph-writeup">
         Generally, people worked fourty hours per week. As responsibilities increased, more people worked slightly longer in the fifth and sixth co-ops. Some people had particularly busy co-op terms, with someone working 80 hours a week in first year!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Co-op Term Ratings</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="coop_rating" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -118,7 +129,7 @@
     <div class="col-md-4 graph-writeup">
         Generally, people liked their co-ops more as the terms went on. This is probably a combination of having the requisite experience to get the roles that people were looking for, as well as people figuring out what they like and what they do not
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Co-op Stress</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="coop_stress" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -126,7 +137,7 @@
     <div class="col-md-4 graph-writeup">
         On the other hand, self-reported stress increased as the co-op terms went on. This is probably due to increased responsibilities. It never gets easier 😢
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>How'd you find your co-op?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="coop1__findingMethod" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -134,7 +145,7 @@
     <div class="col-md-4 graph-writeup">
         The amount of people in the continuous round of WaterlooWorks consistently decreased, as they were more desirable to employers as experience grew. Naturally, more and more people returned to previous co-ops as the terms went by.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Co-op Location</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="coop1__location" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -142,7 +153,7 @@
     <div class="col-md-4 graph-writeup">
         Most people didn't end up going to California for co-ops, probably due to the pandemic disrupting the terms where most people usually go to California. The University actually did not allow work outside of Canada to count as a credit at the beginning of the pandemic, which might have influenced people's decisions along with the public health situation. Remote work sprung out of nowhere due to the pandemic too
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Location vs. Hourly Pay</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="Co-op_Location_vs._Hourly_Pay" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -150,7 +161,7 @@
     <div class="col-md-4 graph-writeup">
         American pay was significantly higher than Canadian pay
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Type of Work by Co-op Term</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="coop1__typeOfWork" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -158,7 +169,7 @@
     <div class="col-md-4 graph-writeup">
         These add up to more than 100% of the class population since people did multiple functions in jobs. Many, many people did software work at their jobs. As the years went by, more people got mechanical or hardware focused jobs
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Remote Percentage</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="coop1__remotePercentage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -166,7 +177,7 @@
     <div class="col-md-4 graph-writeup">
         Naturally, remote work increased after COVID-19 came to Canada
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Co-op Rankings</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="coop1__employerRanking" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -174,35 +185,86 @@
     <div class="col-md-4 graph-writeup">
         Lots of people got outstanding ratings on their co-ops, more than 50% after the third co-op. Is the class just really good compared to other co-op students or is there ranking inflation? I leave that analysis as an exercise to the reader.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Co-op Companies</h2>
     <div class="col-md-8 ">
-        <img src="Co-op_Companies.png" class="img-fluid"/>
+        <img src="img/Co-op_Companies.png" class="img-fluid ahhh"/>
     </div>
     <div class="col-md-4 graph-writeup">
         We've worked at a lot of places!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Good Co-ops</h2>
     <div class="col-md-8 ">
-        <img src="Good_Co-ops.png" class="img-fluid"/>
+        <img src="img/Good_Co-ops.png" class="img-fluid ahhh"/>
     </div>
     <div class="col-md-4 graph-writeup">
         These are companies that received an average student rating of greater than eight.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Stressful Co-op Companies</h2>
     <div class="col-md-8 ">
-        <img src="Stressful_Co-ops.png" class="img-fluid"/>
+        <img src="img/Stressful_Co-ops.png" class="img-fluid ahhh"/>
     </div>
     <div class="col-md-4 graph-writeup">
         These companies received an average stress level of greater than seven.
     </div>
+</div><div class="row border-row">
+    <h2>Favourite Co-op Companies</h2>
+    <div class="col-md-8 ">
+        <img src="img/coop_favouriteOrg_wc.png" class="img-fluid ahhh"/>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Respondants were asked what their favourite co-op company was. Apple was the overwhelming favourite with 6 different people noting that it was their favourite co-op. Tesla and the University of Waterloo were silver and bronze.
+    </div>
+</div><div class="row border-row">
+    <h2>Overall Rating of Co-op</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="coop_overallRating" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Most people had a favourable impression of co-op. Given the $$, the experience and the break from school this is not surprising!
+    </div>
+</div><div class="row border-row">
+    <h2>Relevancy of Co-op</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="coop_relevancy" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        The overwhelming majority of people found the experiences they had in co-op relevant to their career
+    </div>
+</div><div class="row border-row">
+    <h2>Highlights of Co-op</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div class="quote">
+    <p>Crashing a $250,000 robot into a $200,000 robot and causing $75,000 in damage</p>
+</div><div class="quote">
+    <p>Working on stuff that actually reaches customers in the real world</p>
+</div><div class="quote">
+    <p>Broke a $3000 calibration device</p>
+</div><div class="quote">
+    <p>Being able to make real impact(ex. new features/functionality, creating new products, bringup work etc) into products that actually get released to the public. Also being able to work with products years before they become public knowledge.</p>
+</div><div class="quote">
+    <p>Visiting Chernobyl ☢️</p>
+</div><div class="quote">
+    <p>Diversity of experiences is so valuable</p>
+</div><div class="quote">
+    <p>Getting paid 🤑</p>
+</div><div class="quote">
+    <p>Traveling</p>
+</div><div class="quote">
+    <p>Learning what I like, and what I hate</p>
+</div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        We had a lot of highlights from co-op! For some people it was the joy of working on relevant relevant things, the diversity of experiences or the travel opportunities that it brought. Also, breaking stuff as a co-op can be quite exhilirating
+    </div>
 </div><div class="row">
-    <div class="col-1 nav-link"><a href="#" id="previous-link">Previous</a></div>
-    <div class="col-10" style="text-align:center">Patch: <span class="patch">78ab62f
+    <div class="col-4"><a href="#" id="previous-link" type="button" class="btn btn-outline-secondary">Previous</a></div>
+    <div class="col-4 patch-container" style="text-align:center">Patch: <span class="patch">8c8b209
 </span></div>
-    <div class=" col-1 nav-link"><a href="#" id="next-link">Next</a></div>
+    <div class="col-4" style="text-align: right;"><a href=" #" id="next-link" type="button"
+            class="btn btn-outline-primary">Next</a></div>
 
 </div>
 </div>
@@ -219,33 +281,8 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-<script>
-    let filename = document.getElementsByName("page-name")[0].getAttribute("content");
-    document.getElementById(filename + "-link").classList.add("active");
-    let page_list = ["index", "demographics", "school", "mental-health", "lifestyle", "sdr", "co-op", "future-plans"];
-    let index = page_list.indexOf(filename);
+<script src="main.js"></script>
 
-    let prev_link = page_list[index - 1];
-    let prev_element = document.getElementById("previous-link");
-    let next_link = page_list[index + 1];
-    let next_element = document.getElementById("next-link");
-
-
-    if (prev_link === undefined) {
-        prev_element.style.visibility = "hidden";
-    } else {
-        prev_element.href = prev_link + ".html"
-        prev_element.innerHTML = prev_link;
-    }
-
-    if (next_link === undefined) {
-        next_element.style.visibility = "hidden";
-    } else {
-        next_element.href = next_link + ".html"
-        next_element.innerHTML = next_link;
-    }
-
-</script>
 
 </body>
 

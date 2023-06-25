@@ -39,22 +39,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="demographics.html" id="demographics-link">Demographics</a>
-                <a class="nav-item nav-link" href="school.html" id="school-link">School</a>
-                <a class="nav-item nav-link" href="mental-health.html" id="mental-health-link">Mental Health</a>
-                <a class="nav-item nav-link" href="lifestyle.html" id="lifestyle-link">Lifestyle</a>
-                <a class="nav-item nav-link" href="sdr.html" id="sdr-link">Sex, Drugs & Relationships</a>
-                <a class="nav-item nav-link" href="co-op.html" id="co-op-link">Co-op</a>
-                <a class="nav-item nav-link" href="future-plans.html" id="future-plans-link">Future Plans</a>
+            <div class="navbar-nav" id="topNavBar">
+
 
             </div>
         </div>
     </nav>
+
     <div class="container">
         <div class="alert alert-warning mobile-warning">
             View this website on desktop for the best experience!
-        </div><div class="row">
+        </div><div class="row border-row">
     <h2>First Year Living</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="firstYearLiving" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -62,7 +57,7 @@
     <div class="col-md-4 graph-writeup">
         A lot of us lived off-campus in first year! There were significant amounts of people living in the UWP area, and less respondants who lived in REV/MKV.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>High School vs. University Average</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="highSchoolVsUniversityAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -70,7 +65,7 @@
     <div class="col-md-4 graph-writeup">
         There's a slight positive correlation between the high school average and cumulative university average
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Cumulative University Average Distribution</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="cumulativeUniversityAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -78,7 +73,7 @@
     <div class="col-md-4 graph-writeup">
         The mean cumulative average was 83%
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Averages by Term</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="school_avg" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -86,7 +81,7 @@
     <div class="col-md-4 graph-writeup">
         The 3B and onward bottom fences got significantly better... Probably due to COVID. This pattern was evident in the 2020 Profile as well, <a href='https://tron2020classprofile.github.io/school'>starting in 4A</a>
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Lecture Attendance by Term</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="1A__lecAttendance" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -94,7 +89,7 @@
     <div class="col-md-4 graph-writeup">
         Oh the steady climb of truancy... Although the hike from 3B and onwards are heavily affected by COVID. For those terms, respondants were prompted to respond with how often they attended online live lectures if available.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Tutorial Attendance by Term</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="1A__tutAttendance" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -102,7 +97,7 @@
     <div class="col-md-4 graph-writeup">
         This is even more dramatic, probably because there weren't marks for attendance in tutorials after 1A
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Workload by Term</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="1A__workload" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -110,7 +105,7 @@
     <div class="col-md-4 graph-writeup">
         2B or not 2B... However, terms got more busy after 2B as well. 
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Stress by Term</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="1A__stress" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -118,7 +113,7 @@
     <div class="col-md-4 graph-writeup">
         2B's reputation lives on!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>CR/NCR Choice in 3A</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="3A_CRNCR" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -126,7 +121,7 @@
     <div class="col-md-4 graph-writeup">
         Because of COVID, the university offered to let students choose between CR/NCR (pass/fail) grading and normal grading in 3A. Less than 10% of the respondants used the CR/NCR option.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Number of Failed Projects</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="numFailedProjects" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -134,7 +129,7 @@
     <div class="col-md-4 graph-writeup">
         Around 20% of the respondants failed at least one project.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Number of Failed Midterms</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="numFailedMidterms" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -142,7 +137,7 @@
     <div class="col-md-4 graph-writeup">
         Close to 50% of the respondents failed at least one midterm
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Number of Failed Finals</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="numFailedFinals" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -150,7 +145,7 @@
     <div class="col-md-4 graph-writeup">
         And around 35% of the respondents failed at least one final
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Number of Failed Courses</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="numFailedCourses" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -158,7 +153,7 @@
     <div class="col-md-4 graph-writeup">
         Twelve respondents failed at least one course, but graduated!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Number of Failed Terms</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="numFailedTerms" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -166,7 +161,7 @@
     <div class="col-md-4 graph-writeup">
         A few people failed some terms, but perservered and graduated
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Work Ethic</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_WorkEthic" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -174,7 +169,7 @@
     <div class="col-md-4 graph-writeup">
         📉 | Let's just say that we got more efficient as the years passed by
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Notetaking Habits</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_NoteTaking" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -182,7 +177,7 @@
     <div class="col-md-4 graph-writeup">
         Notetaking dramatically decreased between first and fourth year with close to 20% of respondents not taking notes in fourth year. There was a significant rise in people who used digital notetaking tools as well
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>How much did you keep up with classes?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_CourseKeepup" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -190,7 +185,7 @@
     <div class="col-md-4 graph-writeup">
         People were less on-top of classes in fourth year rather than first year.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>When did you do projects?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_ProjectHabit" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -198,7 +193,7 @@
     <div class="col-md-4 graph-writeup">
         Most people did projects last-minute throughout university. It's hard balancing projects, tests, social life and sleep!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Exam Study Habits</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_ExamStudyHabit" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -206,7 +201,7 @@
     <div class="col-md-4 graph-writeup">
         Exam Prepardness slightly decreased from first year to fourth year as well.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Satisfaction with Tron</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="tronSatisfaction" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -214,7 +209,7 @@
     <div class="col-md-4 graph-writeup">
         Most respondants gave the program <a href='https://www.youtube.com/watch?v=zKJrrMIsghI'>four stars out of five</a>, with an average rating of 3.4.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Satisfaction with Tron vs. Average</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="satisfactionVsAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -222,7 +217,15 @@
     <div class="col-md-4 graph-writeup">
         Unsurprsingly, there was a correlation between how satisfied you were with the program and the average that you got. The arrow of causation could be pointing in either direction here, though.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
+    <h2>Options Pursued</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="pursuedOption" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Most people didn't pursue any options, but the AI, Computing and Management options were popular amongst those who did pursue one.
+    </div>
+</div><div class="row border-row">
     <h2>Would You Choose Tron Again?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="chooseTronNotKnowing" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -230,15 +233,15 @@
     <div class="col-md-4 graph-writeup">
         Around 60% of the class would do Tron again if they could choose to.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>What Program Would You Do Instead of Tron?</h2>
     <div class="col-md-8 ">
-        <img src="noTronOtherProgram_wc.png" class="img-fluid"/>
+        <img src="img/noTronOtherProgram_wc.png" class="img-fluid ahhh"/>
     </div>
     <div class="col-md-4 graph-writeup">
         Out of the people who wouldn't, most people would have done Electrical and Computer Engineering, Software Engineering or Computer Science given what they know today. Others would leave engineering altogether and pursue other passions.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Parental Education vs. Average</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="parentalEducationvscumulativeUniversityAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -246,7 +249,7 @@
     <div class="col-md-4 graph-writeup">
         There's not too much of a correlation between parental education and universty average.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Family Income vs. Average</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="famIncomeVsAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -254,7 +257,7 @@
     <div class="col-md-4 graph-writeup">
         Similarly, the effects of family income are quite decoupled from the cumulative university average
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Was your FYDP only Mechatronics Students?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="4A_fydpOnlyTron" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -262,7 +265,7 @@
     <div class="col-md-4 graph-writeup">
         Most people sticked to the class for their FYDP groups.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Pride vs. Care</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="4B_fydpPridevs4B_fydpCare" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -270,7 +273,7 @@
     <div class="col-md-4 graph-writeup">
         If you cared more about your FYDP, you were more proud of it.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>FYDP Advice</h2>
     <div class="col-md-8 graph-wrapper">
         <div class="quote">
@@ -288,7 +291,7 @@
     <div class="col-md-4 graph-writeup">
         People had varied pieces of advice for FYDP, I tried to show quotes that were representative of the sentiment of a large number of people
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Did you plan to go on exchange?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="exchange_plan" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -296,7 +299,7 @@
     <div class="col-md-4 graph-writeup">
         More than a tenth of the class planned to go on exchange...
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Planned Exchange: Did You End up Going?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="exchange_actuallyWent" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -304,39 +307,39 @@
     <div class="col-md-4 graph-writeup">
         ... but only two people ended up going. Exchange in Mechatronics is hard to do in the first place because of the strict course matching requirements, but COVID took away the ripe exchange term of 3B.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Most Interesting Core Course</h2>
     <div class="col-md-8 ">
-        <img src="mostInterestingCourseCode_wc.png" class="img-fluid"/>
+        <img src="img/mostInterestingCourseCode_wc.png" class="img-fluid ahhh"/>
     </div>
     <div class="col-md-4 graph-writeup">
         We liked the algorithms (MTE 140) and RTOS (MTE 241) courses the best, probably because a lot of us ended up being more intersted in software over the other parts of mechatronics.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Most Useful Core Course</h2>
     <div class="col-md-8 ">
-        <img src="mostUsefulCourseCode_wc.png" class="img-fluid"/>
+        <img src="img/mostUsefulCourseCode_wc.png" class="img-fluid ahhh"/>
     </div>
     <div class="col-md-4 graph-writeup">
         We found MTE 140 and MTE 241 courses the most useful as well.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Favourite Elective</h2>
     <div class="col-md-8 ">
-        <img src="favouriteElectiveCode_wc.png" class="img-fluid"/>
+        <img src="img/favouriteElectiveCode_wc.png" class="img-fluid ahhh"/>
     </div>
     <div class="col-md-4 graph-writeup">
         We took a lot of different electives! We have a lot of different interests outside of Tron, but our top five were: <ol><li>MUSIC 140: Popular Music and Culture</li> <li>MUSIC 246: Soundtracks: Music in Film</li> <li>ECE 459: Programming for Perfomance</li> <li>SYDE 556: Simulating Neurobiological Systems</li>  <li>ECE 488: Multivariable Control Systems</li></ol>
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Favourite Professor</h2>
     <div class="col-md-8 ">
-        <img src="favProf_wc.png" class="img-fluid"/>
+        <img src="img/favProf_wc.png" class="img-fluid ahhh"/>
     </div>
     <div class="col-md-4 graph-writeup">
         Andrew Beltaos and Igor Ivkovic (😢) took the overwhelming lead for being the favourite professors. There were 30 different professors that someone listed as someones favourite, with the majority of them receiving only one vote.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Cheating: Acceptability</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="cheating_cheatAccept" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -344,7 +347,7 @@
     <div class="col-md-4 graph-writeup">
         Respondants were asked how acceptable they find each of these things from totally nacceptable to totally acceptable. Most people thought that sharing answers to assignments and using the internet to look up small things were quite acceptable. Using other people's work was controversial, and the class did not agree whether this is acceptable or not.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Cheating Prelevance: Pre-COVID</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="cheating_cheatBeforeCovid" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -352,7 +355,7 @@
     <div class="col-md-4 graph-writeup">
         Since COVID drastically increased the accessibility of cheating, respondants were asked for pre and post-COVID cheating prelevance. <br>Predictably, in-person exams made most of these things impossible.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Cheating Prelevance: COVID</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="cheating_cheatDuringCovid" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -360,7 +363,7 @@
     <div class="col-md-4 graph-writeup">
         With accessibility to the internet during COVID exams, many people turned to it to ask small things. Most people refrained from using Chegg or being on calls during exams, but it definitely increased.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Cheating Prelevance Difference: Pre-COVID vs. COVID</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="cheating_delta" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -368,7 +371,7 @@
     <div class="col-md-4 graph-writeup">
         On this chart, red shows decreases in count and green shows increases in count. Cheating definitely increased because of COVID.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Cheating Guilt</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="cheating_howGuilty" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -377,10 +380,11 @@
         Out of the people who had cheated, they were asked how guilty they felt. Most people didn't really feel guilty. When asked why they cheated, the most common responses were <q>The opportunity was there so I took it</q>, <q>Felt like everyone else was</q> and <q>Poorly worded assignments</q>
     </div>
 </div><div class="row">
-    <div class="col-1 nav-link"><a href="#" id="previous-link">Previous</a></div>
-    <div class="col-10" style="text-align:center">Patch: <span class="patch">78ab62f
+    <div class="col-4"><a href="#" id="previous-link" type="button" class="btn btn-outline-secondary">Previous</a></div>
+    <div class="col-4 patch-container" style="text-align:center">Patch: <span class="patch">8c8b209
 </span></div>
-    <div class=" col-1 nav-link"><a href="#" id="next-link">Next</a></div>
+    <div class="col-4" style="text-align: right;"><a href=" #" id="next-link" type="button"
+            class="btn btn-outline-primary">Next</a></div>
 
 </div>
 </div>
@@ -397,33 +401,8 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-<script>
-    let filename = document.getElementsByName("page-name")[0].getAttribute("content");
-    document.getElementById(filename + "-link").classList.add("active");
-    let page_list = ["index", "demographics", "school", "mental-health", "lifestyle", "sdr", "co-op", "future-plans"];
-    let index = page_list.indexOf(filename);
+<script src="main.js"></script>
 
-    let prev_link = page_list[index - 1];
-    let prev_element = document.getElementById("previous-link");
-    let next_link = page_list[index + 1];
-    let next_element = document.getElementById("next-link");
-
-
-    if (prev_link === undefined) {
-        prev_element.style.visibility = "hidden";
-    } else {
-        prev_element.href = prev_link + ".html"
-        prev_element.innerHTML = prev_link;
-    }
-
-    if (next_link === undefined) {
-        next_element.style.visibility = "hidden";
-    } else {
-        next_element.href = next_link + ".html"
-        next_element.innerHTML = next_link;
-    }
-
-</script>
 
 </body>
 

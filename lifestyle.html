@@ -39,22 +39,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="demographics.html" id="demographics-link">Demographics</a>
-                <a class="nav-item nav-link" href="school.html" id="school-link">School</a>
-                <a class="nav-item nav-link" href="mental-health.html" id="mental-health-link">Mental Health</a>
-                <a class="nav-item nav-link" href="lifestyle.html" id="lifestyle-link">Lifestyle</a>
-                <a class="nav-item nav-link" href="sdr.html" id="sdr-link">Sex, Drugs & Relationships</a>
-                <a class="nav-item nav-link" href="co-op.html" id="co-op-link">Co-op</a>
-                <a class="nav-item nav-link" href="future-plans.html" id="future-plans-link">Future Plans</a>
+            <div class="navbar-nav" id="topNavBar">
+
 
             </div>
         </div>
     </nav>
+
     <div class="container">
         <div class="alert alert-warning mobile-warning">
             View this website on desktop for the best experience!
-        </div><div class="row">
+        </div><div class="row border-row">
     <h2>Class Friendliness</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="classFriendliness" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -62,15 +57,15 @@
     <div class="col-md-4 graph-writeup">
         Most people perceived our class to be quite friendly, with an average friendliness rating of 3.86.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Class Friends</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="numFriendsTron" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
-        We defined a friend to be someone who you would invite to a birthday party. More people in our class had a smaller group of friends.
+        Continuing the tradition of previous class profiles, a friend was defined to be someone who you would invite to your birthday party. Most people in our class had between 1 and 20 friends in the class.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Out of your closest five friends, how many of them are in Tron 2022?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="numClosestFriendsTron" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -78,23 +73,23 @@
     <div class="col-md-4 graph-writeup">
         A sizable portion of the class had all of their closest friends in the class! 
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>What is your favourite restaurant in Waterloo?</h2>
     <div class="col-md-8 ">
-        <img src="favouriteRestaurant_wc.png" class="img-fluid"/>
+        <img src="img/favouriteRestaurant_wc.png" class="img-fluid ahhh"/>
     </div>
     <div class="col-md-4 graph-writeup">
         Lazeez remains the king
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Eating Out by Year</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_EatingOut" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
-        Ignoring less eating out in third year due to the pandemic, people generally ate out more in fourth year. Probably a combination of more money and no meal plan
+        Ignoring less eating out in third year due to the pandemic, people generally ate out more in fourth year. Probably a combination of more money saved up and no meal plan
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Exercise by Year</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_Excercise" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -102,7 +97,7 @@
     <div class="col-md-4 graph-writeup">
         Students generally did more exercise in fourth year than first year 🏃‍♀
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Waterloo Ranking by Year</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_WaterlooRating" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -110,7 +105,7 @@
     <div class="col-md-4 graph-writeup">
         People warmed up to Waterloo by fourth year
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Sleep Length</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_SleepLen" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -118,7 +113,7 @@
     <div class="col-md-4 graph-writeup">
         Sleep length generally increased from first year to fourth year
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Sleep Time</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_SleepTime" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -126,7 +121,7 @@
     <div class="col-md-4 graph-writeup">
         Overall, there was a normal-ish distribution of sleep time amongst students. Significantly more 4AM sleepers in fourth year than other years...
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Imposter Feeling</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_Imposter" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -134,7 +129,7 @@
     <div class="col-md-4 graph-writeup">
         40% of the respondents felt like they were an imposter in first year. This improved with time, but even in fourth year close to 15% of the respondents felt like imposters.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Cooking Skills</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_CookingSkills" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -142,7 +137,7 @@
     <div class="col-md-4 graph-writeup">
         Even though people ate out more, their self-reported cooking skills improved significantly from first year to fourth year 👨‍🍳🍳
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Intelligence</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_Intelligence" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -150,7 +145,7 @@
     <div class="col-md-4 graph-writeup">
         Although the work ethic went down, people generally thought of themselves as more intelligent in fourth year compared to first year
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Confidence</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_Confidence" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -158,7 +153,7 @@
     <div class="col-md-4 graph-writeup">
         Self-confidence increased significantly from first year to fourth year
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Attractiveness</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_Attractiveness" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -166,7 +161,15 @@
     <div class="col-md-4 graph-writeup">
         People rated themselves to be slightly more attractive, with the average rating increasing from 2.83 to 3.32 between first and fourth year
     </div>
-</div><div class="row">
+</div><div class="row border-row">
+    <h2>Exercise vs. Attractiveness in Fourth Year</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="fourthYearExcercisevsfourthYearAttractivenessmean" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Generally, the more you exercised the higher the self-rated attractiveness
+    </div>
+</div><div class="row border-row">
     <h2>Extracurriculars by Year</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_Extracurriculars" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -174,23 +177,39 @@
     <div class="col-md-4 graph-writeup">
         Participation in student design teams decreased year-over-year, probably because people used their prior co-op experience as resume material rather than student teams. Also, COVID hit in third year which seemed to cause a significant dip in design team participation. Close to 20% of the class participated in Tron Mentor Chats, a service that connects upper year trons to lower year trons/prospective students! Many people participated in intramurals, especially in fourth year.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Party Frequency by Year</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="yearComps_Party" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
-        If we ignore third year (COVID)
+        If we ignore third year (COVID), lots of people went from partying 1-2x/term to 1x/month over the course of their degree 🥳
     </div>
-</div><div class="row">
-    <h2>Stream vs. Partying in Fourth Year</h2>
+</div><div class="row border-row">
+    <h2>COVID: Number of Infections</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="streamvsfourthYearParty_num" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="covid_numInfections" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
-        The median parties/week was the same for stream 4 and stream 8. However, there was a s
+        The majority of the respondants had COVID once, with a sizeable portion reporting that they never got the 'rona.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
+    <h2>COVID: Preferred Learning Style</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="covid_preferredLearningStyle" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        After getting a taste of online school, most of us couldn't go back to fully in-person. We did miss out on a lot of the practical lab sessions and socializing because of online school, which are probably reasons why many people want at least some in-person components to university.
+    </div>
+</div><div class="row border-row">
+    <h2>COVID: Negative Effects</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="covid_positive_Effects" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Unsuprisingly, COVID sucked for mostly everything except for academics 😂
+    </div>
+</div><div class="row border-row">
     <h2>Number of All-Nighters</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="numAllnighters" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -198,7 +217,31 @@
     <div class="col-md-4 graph-writeup">
         Seems like you either pull zero all nighters or a lot of them, not too many people in between
     </div>
-</div><div class="row">
+</div><div class="row border-row">
+    <h2>Hobbies</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="hobbies_sanitized" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Lots of people liked cooking!
+    </div>
+</div><div class="row border-row">
+    <h2>Finances: Investments</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="finances_investments" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Around 20% of the class did not invest their money. Out of the remaining 80%, stocks were the most popular investment vehicle
+    </div>
+</div><div class="row border-row">
+    <h2>Finances: Meme Stocks</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="finances_memeStock" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        <a href='https://www.google.com/finance/quote/GME:NYSE?window=5Y'>GME 🚀</a>?
+    </div>
+</div><div class="row border-row">
     <h2>Favourite Programming Language</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="favProgrammingLanguage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -206,15 +249,15 @@
     <div class="col-md-4 graph-writeup">
         Lots of Python lovers (this profile was mostly written in Python too!). Mechatronics is probably one of the only programs with this many C/C++ lovers though. lol solidworks.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Favourite Mobile OS</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="favMobileOS" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
-        Slight preference in iOS vs. Android
+        Slight preference in iOS vs. Android 🍏
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Favouite Computer OS</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="favComputerOS" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -222,7 +265,7 @@
     <div class="col-md-4 graph-writeup">
         Windows remains super popular with ~70% of people saying it was their favourite, followed by MacOS and finally Ubuntu. No Arch Linux people?
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Weekly Reddit Usage</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="weeklyRedditUsage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -230,7 +273,7 @@
     <div class="col-md-4 graph-writeup">
         Should have probably added a distinction for 0 hours of Reddit usage vs >0 but <=1h. Oops.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Cats vs. Dogs</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="catsVsDogs" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -238,11 +281,20 @@
     <div class="col-md-4 graph-writeup">
         Our class was mostly filled with dog people. 🐶🐕 
     </div>
+</div><div class="row border-row">
+    <h2>Are you happy?</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="isHappy" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        As of June 2022, 90% of the class was happy!
+    </div>
 </div><div class="row">
-    <div class="col-1 nav-link"><a href="#" id="previous-link">Previous</a></div>
-    <div class="col-10" style="text-align:center">Patch: <span class="patch">78ab62f
+    <div class="col-4"><a href="#" id="previous-link" type="button" class="btn btn-outline-secondary">Previous</a></div>
+    <div class="col-4 patch-container" style="text-align:center">Patch: <span class="patch">8c8b209
 </span></div>
-    <div class=" col-1 nav-link"><a href="#" id="next-link">Next</a></div>
+    <div class="col-4" style="text-align: right;"><a href=" #" id="next-link" type="button"
+            class="btn btn-outline-primary">Next</a></div>
 
 </div>
 </div>
@@ -259,33 +311,8 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-<script>
-    let filename = document.getElementsByName("page-name")[0].getAttribute("content");
-    document.getElementById(filename + "-link").classList.add("active");
-    let page_list = ["index", "demographics", "school", "mental-health", "lifestyle", "sdr", "co-op", "future-plans"];
-    let index = page_list.indexOf(filename);
+<script src="main.js"></script>
 
-    let prev_link = page_list[index - 1];
-    let prev_element = document.getElementById("previous-link");
-    let next_link = page_list[index + 1];
-    let next_element = document.getElementById("next-link");
-
-
-    if (prev_link === undefined) {
-        prev_element.style.visibility = "hidden";
-    } else {
-        prev_element.href = prev_link + ".html"
-        prev_element.innerHTML = prev_link;
-    }
-
-    if (next_link === undefined) {
-        next_element.style.visibility = "hidden";
-    } else {
-        next_element.href = next_link + ".html"
-        next_element.innerHTML = next_link;
-    }
-
-</script>
 
 </body>
 

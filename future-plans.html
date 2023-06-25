@@ -39,22 +39,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="demographics.html" id="demographics-link">Demographics</a>
-                <a class="nav-item nav-link" href="school.html" id="school-link">School</a>
-                <a class="nav-item nav-link" href="mental-health.html" id="mental-health-link">Mental Health</a>
-                <a class="nav-item nav-link" href="lifestyle.html" id="lifestyle-link">Lifestyle</a>
-                <a class="nav-item nav-link" href="sdr.html" id="sdr-link">Sex, Drugs & Relationships</a>
-                <a class="nav-item nav-link" href="co-op.html" id="co-op-link">Co-op</a>
-                <a class="nav-item nav-link" href="future-plans.html" id="future-plans-link">Future Plans</a>
+            <div class="navbar-nav" id="topNavBar">
+
 
             </div>
         </div>
     </nav>
+
     <div class="container">
         <div class="alert alert-warning mobile-warning">
             View this website on desktop for the best experience!
-        </div><div class="row">
+        </div><div class="row border-row">
     <h2>One-Year Outlook</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_oneYearOutlook" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -62,7 +57,7 @@
     <div class="col-md-4 graph-writeup">
         80% of people thought they'd be working full time one year from when they submitted the survey, with most of those people already having a job lined up
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Full-time Job Employment Arrangement</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_ft_employmentArrangement" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -70,7 +65,7 @@
     <div class="col-md-4 graph-writeup">
         The vast majority of Trons signed normal full-time job employment agreements
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Full Time Job: Was it a previous co-op?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_ft_wasCoopJob" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -78,15 +73,15 @@
     <div class="col-md-4 graph-writeup">
         Not only does the co-op program help develop skills for the workforce, 60% of respondents also returned to a co-op employee for a full time job after graduating!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Full Time Job Companies</h2>
     <div class="col-md-8 ">
-        <img src="fut_ft_company_wc.png" class="img-fluid"/>
+        <img src="img/fut_ft_company_wc.png" class="img-fluid ahhh"/>
     </div>
     <div class="col-md-4 graph-writeup">
         A good mix of well-known names and small startups in here!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Full-Time Type of Work</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_ft_typeOfWork" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -94,7 +89,7 @@
     <div class="col-md-4 graph-writeup">
         Most of us are doing some kind of software, but there is a sizable amount of other responsibilities
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Full Time Job: Why'd you pick it?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_ft_whyThisJob" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -102,15 +97,15 @@
     <div class="col-md-4 graph-writeup">
         Not much more to say about this one
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Full Time Job: Salaries</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_ft_salary_filtered" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
-        There's a pretty large distribution here, probably because of location
+        Let's make that money!!! 🤑⚙️
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Full Time Job: Total Compensation (CAD) vs. Location</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_ft_jobLocationvsfut_ft_total_comp" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -118,7 +113,23 @@
     <div class="col-md-4 graph-writeup">
         Someone in Ontario got crazy equity!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
+    <h2>Full Time Job: Signing Bonuses</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="fut_ft_signBonus" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Most people didn't get any signing bonuses.
+    </div>
+</div><div class="row border-row">
+    <h2>Full Time Job: Signing Bonus by Location</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="fut_ft_jobLocationvsfut_ft_signBonus" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Seattle with them signing bonuses what the...
+    </div>
+</div><div class="row border-row">
     <h2>Full Time Job: Compensation vs. Gender</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="gender_vs_ft_comp" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -126,15 +137,15 @@
     <div class="col-md-4 graph-writeup">
         The pay gap re-emerges 😔
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Full Time Job: Cumulative Universaty Average vs. Salary</h2>
     <div class="col-md-8 graph-wrapper">
-        <div id="roundedToFiveUniversityAveragevsfut_ft_salary" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+        <div id="cumulativeUniversityAverageRoundedToOnevsfut_ft_salary" class="plotly-graph-div" style="height:100%; width:100%;"></div>
     </div>
     <div class="col-md-4 graph-writeup">
-        Surprisingly, there's a good correlation between university average and full time pay!
+        Surprisingly, there's a good correlation between university average and full time pay, at least for people who got more than a 75%
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Full-time Job Location</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_ft_jobLocation" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -142,7 +153,7 @@
     <div class="col-md-4 graph-writeup">
         For people who've had a full time job lined up, the highest concentration of people are in California. A sizeable portion of us are in the GTA and BC as well.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Working Abroad: Why did you leave Canada?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_ft_whyLeaveCanada" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -150,7 +161,7 @@
     <div class="col-md-4 graph-writeup">
         The brain drain is evident here, many of our smart colleagues left Canada because of better compensation south of the border.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Working Abroad: Would you return to Canada sometime?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_ft_returnToCanada" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -158,7 +169,7 @@
     <div class="col-md-4 graph-writeup">
         Most people want to return to Canada after working abroad 🇨🇦
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Higher Education Completed After Ten Years</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_higherEducationTenYears" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -166,7 +177,111 @@
     <div class="col-md-4 graph-writeup">
         The amount of people who don't want anything to do with school and the number of people who want to do a masters in engineering is roughly equal
     </div>
-</div><div class="row">
+</div><div class="row border-row">
+    <h2>Grad School: Lined Up?</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="fut_grad_linedUp" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        16 people indicated that they were going to grad school after finishing undergrad. 75% of them had an offer when responding to this survey at the end of 4B.
+    </div>
+</div><div class="row border-row">
+    <h2>Grad School: Program</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div class="quote">
+    <p>Electrical Engineering</p>
+</div><div class="quote">
+    <p>Mechanical and Mechatronics Engineering</p>
+</div><div class="quote">
+    <p>Biomedical Engineering</p>
+</div><div class="quote">
+    <p>MEng</p>
+</div><div class="quote">
+    <p>Systems Design Engineering</p>
+</div><div class="quote">
+    <p>Mechatronics Engineering - Controls Research</p>
+</div><div class="quote">
+    <p>MASc - Mechanical and Mechatronics Engineering</p>
+</div><div class="quote">
+    <p>applied math</p>
+</div><div class="quote">
+    <p>Dual degree in Law and Masters of Public Policy</p>
+</div><div class="quote">
+    <p>ECE - Biomedical devices</p>
+</div><div class="quote">
+    <p>ECE</p>
+</div><div class="quote">
+    <p>Robotics Engineering</p>
+</div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Most people continued with some kind of engineering graduate degree, but some people branched out into Law or Mathematics.
+    </div>
+</div><div class="row border-row">
+    <h2>Grad School: University</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="fut_grad_where_amalg" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        UW was popular for people's graduate school
+    </div>
+</div><div class="row border-row">
+    <h2>Grad School: Why?</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div class="quote">
+    <p>More knowledge on RF systems and reserach experience</p>
+</div><div class="quote">
+    <p>A job in the field on interest</p>
+</div><div class="quote">
+    <p>More academic knowledge, expanded professional and academic network</p>
+</div><div class="quote">
+    <p>Deeper understanding and application</p>
+</div><div class="quote">
+    <p>More controls knowledge</p>
+</div><div class="quote">
+    <p>Relevant experience, knowledge</p>
+</div><div class="quote">
+    <p>Exposure to the medical field</p>
+</div><div class="quote">
+    <p>technical competencies and research skill/vision/taste</p>
+</div><div class="quote">
+    <p>A career change - hoping to transition to tech policy</p>
+</div><div class="quote">
+    <p>MBA</p>
+</div><div class="quote">
+    <p>Research experience and a better university experience</p>
+</div><div class="quote">
+    <p>A master's degree</p>
+</div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Most people wanted to do graduate studies for deeper knowledge and experience for their field of interest.
+    </div>
+</div><div class="row border-row">
+    <h2>Grad Trip?</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="gradTrip" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Over 70% of people had a grad trip planned after 4B. Most people probably caught the travel bug from a combination of being done with a difficult university program and the isolation of COVID in the past few years.
+    </div>
+</div><div class="row border-row">
+    <h2>Grad Trip: Where?</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="gradTrip_where" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        A lot of the class was in Western Europe after graduating! Flights were cheap, 'rona was (a bit) relaxed and the vibes were great! Canada and the US were also popular, and yet others went to more exotic places
+    </div>
+</div><div class="row border-row">
+    <h2>Grad Trip: Length</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="gradTrip_lenDays" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        Most people went for a couple weeks, but someone had a 3 month trip planned!
+    </div>
+</div><div class="row border-row">
     <h2>Tron Friends After Ten Years</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_friendsTronTenYears" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -174,7 +289,7 @@
     <div class="col-md-4 graph-writeup">
         Most people thought they'd be friends with at least a person from Tron in ten years!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Marriage Age</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_marriageAge" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -182,7 +297,7 @@
     <div class="col-md-4 graph-writeup">
         The vast majority of people would like to get married in the future, with most aiming for between 25-30
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Children Age</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="fut_kidsAge" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -190,11 +305,78 @@
     <div class="col-md-4 graph-writeup">
         There is more variability in when and if people want children. 13% of people don't plan to have kids at all.
     </div>
+</div><div class="row border-row">
+    <h2>Comments on the Overall Tron Experience</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div class="quote">
+    <p>tron is a mistake but its a good mistake to make</p>
+</div><div class="quote">
+    <p>Mechatronics was not a mistake</p>
+</div><div class="quote">
+    <p>One issue is that due to the job market/compensation, many people in the class tend to lean towards software. As someone on the mechancial side this really leaves a handful of people I can speak mech with. Overall it seems like I'm in the wrong program in this sense. Mechatronics feels like it's more ECE than ME.</p>
+</div><div class="quote">
+    <p>I think it's a poorly designed program that has to potential to be good but not in a good state right now. There are a ton of useless courses if someone is trying to go into robotics. They should make 3 separate streams after 2B where we can pick a cluster of courses to specialize in (similar to how EngSci at UofT does it).</p>
+</div><div class="quote">
+    <p>Breadth of program is a double-edged sword. If you know what you're interested in doing, it would be good to transfer into a program that better matches</p>
+</div><div class="quote">
+    <p>I wish I learned less about mechanical stuff</p>
+</div><div class="quote">
+    <p>There were things I didn't like but I would do it all againROBOTS!</p>
+</div><div class="quote">
+    <p>I enjoyed it, and will miss the class</p>
+</div><div class="quote">
+    <p>You already know mechatronics was a mistake but the people made it worthwhile</p>
+</div><div class="quote">
+    <p>Tron was great, negative and positive experiences consideredWorth it.</p>
+</div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        There were a variety of opinions about the Tron experience, I tried to capture the most common sentiments.
+    </div>
+</div><div class="row border-row">
+    <h2>What's the best lesson that you learned from this experience?</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div class="quote">
+    <p>profs are there to help you (well most of them) and having friends in class goes long way (as in assignments studying for exams etc)</p>
+</div><div class="quote">
+    <p>Make memories with those you care about, and prepare in advance if you want things to be easier for future you.</p>
+</div><div class="quote">
+    <p>University is a very unique point in your life where a lot of your friends are in a very close proximity to you and you can do a lot of things if you want. Enjoy your time, go out and try things, and if you're ever feeling down don't hesitate to reach out to your friends and network cuz they're more willing to help you out more than you think.</p>
+</div><div class="quote">
+    <p>Time management: start early!</p>
+</div><div class="quote">
+    <p>Find the reason why you are here striving</p>
+</div><div class="quote">
+    <p>You need friends to rely on to help you through school</p>
+</div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        nan
+    </div>
+</div><div class="row border-row">
+    <h2>Any advice for young Trons?</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div class="quote">
+    <p>Wait until the end of 2B before you judge yourself. If you perform poorly in first year, it's because you're still adjusting to university or your high school did not prepare you properly. I went from a 28% on my first lin alg quiz to Dean's List in 2B.</p>
+</div><div class="quote">
+    <p>Yes, don't listen to the upper years. They are pretentious and love to complain to their subordinates about how hard their life is.</p>
+</div><div class="quote">
+    <p>You'll be fine, just keep going at your own pace.</p>
+</div><div class="quote">
+    <p>The interview is a game, treat it as such</p>
+</div><div class="quote">
+    <p>Make the most of your university life. Meet people, do stupid things, have fun. It'll rush by, so cherish it :)</p>
+</div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        nan
+    </div>
 </div><div class="row">
-    <div class="col-1 nav-link"><a href="#" id="previous-link">Previous</a></div>
-    <div class="col-10" style="text-align:center">Patch: <span class="patch">78ab62f
+    <div class="col-4"><a href="#" id="previous-link" type="button" class="btn btn-outline-secondary">Previous</a></div>
+    <div class="col-4 patch-container" style="text-align:center">Patch: <span class="patch">8c8b209
 </span></div>
-    <div class=" col-1 nav-link"><a href="#" id="next-link">Next</a></div>
+    <div class="col-4" style="text-align: right;"><a href=" #" id="next-link" type="button"
+            class="btn btn-outline-primary">Next</a></div>
 
 </div>
 </div>
@@ -211,33 +393,8 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-<script>
-    let filename = document.getElementsByName("page-name")[0].getAttribute("content");
-    document.getElementById(filename + "-link").classList.add("active");
-    let page_list = ["index", "demographics", "school", "mental-health", "lifestyle", "sdr", "co-op", "future-plans"];
-    let index = page_list.indexOf(filename);
+<script src="main.js"></script>
 
-    let prev_link = page_list[index - 1];
-    let prev_element = document.getElementById("previous-link");
-    let next_link = page_list[index + 1];
-    let next_element = document.getElementById("next-link");
-
-
-    if (prev_link === undefined) {
-        prev_element.style.visibility = "hidden";
-    } else {
-        prev_element.href = prev_link + ".html"
-        prev_element.innerHTML = prev_link;
-    }
-
-    if (next_link === undefined) {
-        next_element.style.visibility = "hidden";
-    } else {
-        next_element.href = next_link + ".html"
-        next_element.innerHTML = next_link;
-    }
-
-</script>
 
 </body>
 

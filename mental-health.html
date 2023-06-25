@@ -39,22 +39,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="demographics.html" id="demographics-link">Demographics</a>
-                <a class="nav-item nav-link" href="school.html" id="school-link">School</a>
-                <a class="nav-item nav-link" href="mental-health.html" id="mental-health-link">Mental Health</a>
-                <a class="nav-item nav-link" href="lifestyle.html" id="lifestyle-link">Lifestyle</a>
-                <a class="nav-item nav-link" href="sdr.html" id="sdr-link">Sex, Drugs & Relationships</a>
-                <a class="nav-item nav-link" href="co-op.html" id="co-op-link">Co-op</a>
-                <a class="nav-item nav-link" href="future-plans.html" id="future-plans-link">Future Plans</a>
+            <div class="navbar-nav" id="topNavBar">
+
 
             </div>
         </div>
     </nav>
+
     <div class="container">
         <div class="alert alert-warning mobile-warning">
             View this website on desktop for the best experience!
-        </div><div class="row">
+        </div><div class="row border-row">
     <h2>Mental Health Conditions</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="mentalHealth_conditions" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -62,7 +57,7 @@
     <div class="col-md-4 graph-writeup">
         More than half of the class had <i>some</i> type of mental health condition at some point during their academic term. Many people had anxiety and depression, and suicidal thoughts were surprisingly common at 10% 😟. Hope people are struggling less after university is finished.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Primary Cause of Depression and Anxiety</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="mentalHealth_depressionAnxietyCause" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -70,7 +65,7 @@
     <div class="col-md-4 graph-writeup">
         For people who had depression or anxiety, most people attributed academics as the main cause. Relationships was the second most attributed cause, followed by others
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Mental Health by Gender</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="genderIdentityvsmentalHealth_sumOfConditions" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -78,7 +73,7 @@
     <div class="col-md-4 graph-writeup">
         Females had a higher average of mental health issues than males. This is a well known phenomenon in <a href='https://doi.org/10.1016/S2215-0366(16)30348-0'>the literature</a>.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Mental Health Supports Seeked</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="mentalHealth_supportSeeked" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -86,7 +81,7 @@
     <div class="col-md-4 graph-writeup">
         Out of the people who grappled with at least one mental health issue, most people turned to friends and family for support. Many people also turned to professional help, be it from the university, external counsellers or engineering counseling.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Does UW Provide Sufficient Mental Health Supports?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="mentalHealth_UWSupportRating" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -95,10 +90,11 @@
         Out of the people who experienced at least one mental health condition, most of them hadn't looked at UW support system enough to say whether it is sufficient. Out of the people who had, many people found the amount of support available to be insufficient.
     </div>
 </div><div class="row">
-    <div class="col-1 nav-link"><a href="#" id="previous-link">Previous</a></div>
-    <div class="col-10" style="text-align:center">Patch: <span class="patch">78ab62f
+    <div class="col-4"><a href="#" id="previous-link" type="button" class="btn btn-outline-secondary">Previous</a></div>
+    <div class="col-4 patch-container" style="text-align:center">Patch: <span class="patch">8c8b209
 </span></div>
-    <div class=" col-1 nav-link"><a href="#" id="next-link">Next</a></div>
+    <div class="col-4" style="text-align: right;"><a href=" #" id="next-link" type="button"
+            class="btn btn-outline-primary">Next</a></div>
 
 </div>
 </div>
@@ -115,33 +111,8 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-<script>
-    let filename = document.getElementsByName("page-name")[0].getAttribute("content");
-    document.getElementById(filename + "-link").classList.add("active");
-    let page_list = ["index", "demographics", "school", "mental-health", "lifestyle", "sdr", "co-op", "future-plans"];
-    let index = page_list.indexOf(filename);
+<script src="main.js"></script>
 
-    let prev_link = page_list[index - 1];
-    let prev_element = document.getElementById("previous-link");
-    let next_link = page_list[index + 1];
-    let next_element = document.getElementById("next-link");
-
-
-    if (prev_link === undefined) {
-        prev_element.style.visibility = "hidden";
-    } else {
-        prev_element.href = prev_link + ".html"
-        prev_element.innerHTML = prev_link;
-    }
-
-    if (next_link === undefined) {
-        next_element.style.visibility = "hidden";
-    } else {
-        next_element.href = next_link + ".html"
-        next_element.innerHTML = next_link;
-    }
-
-</script>
 
 </body>
 

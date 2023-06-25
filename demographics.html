@@ -39,22 +39,25 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="demographics.html" id="demographics-link">Demographics</a>
-                <a class="nav-item nav-link" href="school.html" id="school-link">School</a>
-                <a class="nav-item nav-link" href="mental-health.html" id="mental-health-link">Mental Health</a>
-                <a class="nav-item nav-link" href="lifestyle.html" id="lifestyle-link">Lifestyle</a>
-                <a class="nav-item nav-link" href="sdr.html" id="sdr-link">Sex, Drugs & Relationships</a>
-                <a class="nav-item nav-link" href="co-op.html" id="co-op-link">Co-op</a>
-                <a class="nav-item nav-link" href="future-plans.html" id="future-plans-link">Future Plans</a>
+            <div class="navbar-nav" id="topNavBar">
+
 
             </div>
         </div>
     </nav>
+
     <div class="container">
         <div class="alert alert-warning mobile-warning">
             View this website on desktop for the best experience!
-        </div><div class="row">
+        </div><div class="row border-row">
+    <h2>Response Rate</h2>
+    <div class="col-md-8 graph-wrapper">
+        <div id="responseRate" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+    </div>
+    <div class="col-md-4 graph-writeup">
+        52% of the graduating class responded to the main survey. Thank you all!
+    </div>
+</div><div class="row border-row">
     <h2>Birth Year</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="birthYear" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -62,7 +65,7 @@
     <div class="col-md-4 graph-writeup">
         Most of us were born right before Y2K in the last year of the 20th century!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Stream</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="stream" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -70,7 +73,7 @@
     <div class="col-md-4 graph-writeup">
         There were slightly more 8-stream respondents to this survey. The creator of this survey was in 8-stream for most of his university career.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Gender Identity</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="genderIdentity" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -78,7 +81,7 @@
     <div class="col-md-4 graph-writeup">
         About 80% of the respondants identified as male, which lines up almost perfectly with the Tron 2020 Class Profile.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Ethnicity</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="race" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -86,7 +89,7 @@
     <div class="col-md-4 graph-writeup">
         The majority of respondants were Caucasian, but there were a significant amount of Asians in the class as well.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Religious Beliefs</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="religiousBeliefs" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -94,7 +97,7 @@
     <div class="col-md-4 graph-writeup">
         There were diverse religious beliefs in the class, but most Trons were either atheist or agnostic. For the most part, students were less subscribed to their family's religions. 
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Sexualities</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="sexualOrientation" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -102,7 +105,7 @@
     <div class="col-md-4 graph-writeup">
         Around 12% of the respondants identify as part of the LGBTQ2+ community, a significantly higher number than the Canadian rate of <a href='https://www150.statcan.gc.ca/n1/daily-quotidien/210615/dq210615a-eng.htm'>4%.</a>
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Why did you choose Tron?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="reasonTron" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -110,7 +113,7 @@
     <div class="col-md-4 graph-writeup">
         The biggest reason for choosing Tron was because it sounded cool, which is accurate... But co-op came in a very close second.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>High School Location</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="highSchoolLocation" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -118,7 +121,7 @@
     <div class="col-md-4 graph-writeup">
         Most of us grew up in Ontario, but we have a few out of province and international friends!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Immigration Status</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="immigrationStatus" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -126,7 +129,7 @@
     <div class="col-md-4 graph-writeup">
         We're evenly split between first, second and third generation immigrant status
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Voter?</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="isVoter" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -134,7 +137,7 @@
     <div class="col-md-4 graph-writeup">
         This question was only asked to people who are eligible to vote. Out of those, 85% are voters!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Political Leanings</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="leftToRight" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -142,7 +145,7 @@
     <div class="col-md-4 graph-writeup">
         Students tended to lean left on the (flawed) political spectrum. The average rating was 3.11.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Authoritarianism vs. Libertarianism</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="authToLib" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -150,7 +153,7 @@
     <div class="col-md-4 graph-writeup">
         We tended to lean slightly towards Libertarianism
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Voting Attitudes</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="votingAttitudes" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -158,7 +161,7 @@
     <div class="col-md-4 graph-writeup">
         Most students voted for either the Liberal Party or the New Democratic Party. The Conservative Party came in a close third. However, there are significant differences between voted party and preferred party, which suggests some strategic voting is taking place.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>High School Averages</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="highSchoolAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -166,7 +169,7 @@
     <div class="col-md-4 graph-writeup">
         Of course, since the University uses university averages as a criterion for admission, the cohort's high school averages were quite strong. The average average (heh) was 94.6%.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Enriched Programs</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="highSchoolSpecialProgram" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -174,7 +177,7 @@
     <div class="col-md-4 graph-writeup">
         Many of us went to enriched programs in high school
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Enriched Program vs. Cumulative Average</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="highSchoolSpecialProgramvscumulativeUniversityAverage" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -182,7 +185,7 @@
     <div class="col-md-4 graph-writeup">
         IB students had higher cumulative university averages. This might suggest that the IB program is good at preparing people for university, but we have to be careful with correlation and causation!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>High School Extracurriculars</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="highSchoolExtracurriculars" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -190,7 +193,7 @@
     <div class="col-md-4 graph-writeup">
         Although engineering students aren't known to be sporty, over 70% of us participated in sports in high school! A sizable portion of us had part-time jobs, did band, and (predictably) participated in robotics
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Family Income</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="famIncome" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -198,7 +201,7 @@
     <div class="col-md-4 graph-writeup">
         The family income of the students was generally higher than the median Canadian Household income in 2021 of <a href='https://www150.statcan.gc.ca/n1/daily-quotidien/230502/dq230502a-eng.htm'>$68400</a>.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Parental Financial Contribution</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="finances_parentalContribution" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -206,7 +209,7 @@
     <div class="col-md-4 graph-writeup">
         Most parents helped contribute financially to their children's education, among the other support that they provided. However, the amount of contribution was quite low, probably because of the co-op program.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Parental Education</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="parentalEducation" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -214,7 +217,7 @@
     <div class="col-md-4 graph-writeup">
         Most of our parents were well-educated
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Parental STEM Education</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="parentalSTEM" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -222,7 +225,7 @@
     <div class="col-md-4 graph-writeup">
         Most of our parents had STEM educations, but a third of us dove into engineering by ourselves.
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Debt Post-Grad</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="finances_debtPostGrad" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -230,7 +233,7 @@
     <div class="col-md-4 graph-writeup">
         Thanks to both family contributions and co-op earnings, most of us graduated debt-free!
     </div>
-</div><div class="row">
+</div><div class="row border-row">
     <h2>Savings Post-Grad</h2>
     <div class="col-md-8 graph-wrapper">
         <div id="finances_savingsPostGrad" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -239,10 +242,11 @@
         ... and many of us even graduated with sizeable savings!
     </div>
 </div><div class="row">
-    <div class="col-1 nav-link"><a href="#" id="previous-link">Previous</a></div>
-    <div class="col-10" style="text-align:center">Patch: <span class="patch">78ab62f
+    <div class="col-4"><a href="#" id="previous-link" type="button" class="btn btn-outline-secondary">Previous</a></div>
+    <div class="col-4 patch-container" style="text-align:center">Patch: <span class="patch">8c8b209
 </span></div>
-    <div class=" col-1 nav-link"><a href="#" id="next-link">Next</a></div>
+    <div class="col-4" style="text-align: right;"><a href=" #" id="next-link" type="button"
+            class="btn btn-outline-primary">Next</a></div>
 
 </div>
 </div>
@@ -259,33 +263,8 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
-<script>
-    let filename = document.getElementsByName("page-name")[0].getAttribute("content");
-    document.getElementById(filename + "-link").classList.add("active");
-    let page_list = ["index", "demographics", "school", "mental-health", "lifestyle", "sdr", "co-op", "future-plans"];
-    let index = page_list.indexOf(filename);
+<script src="main.js"></script>
 
-    let prev_link = page_list[index - 1];
-    let prev_element = document.getElementById("previous-link");
-    let next_link = page_list[index + 1];
-    let next_element = document.getElementById("next-link");
-
-
-    if (prev_link === undefined) {
-        prev_element.style.visibility = "hidden";
-    } else {
-        prev_element.href = prev_link + ".html"
-        prev_element.innerHTML = prev_link;
-    }
-
-    if (next_link === undefined) {
-        next_element.style.visibility = "hidden";
-    } else {
-        next_element.href = next_link + ".html"
-        next_element.innerHTML = next_link;
-    }
-
-</script>
 
 </body>
 

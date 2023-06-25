@@ -54,32 +54,9 @@ h2 {
 }
 
 
-/* Override the rounded corners for mobile screens */
-@media (max-width: 768px) {
-    .graph-writeup {
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
-    }
-
-    .graph-wrapper {
-        border-right: none;
-        border-bottom: 1px dashed #ccc;
-        padding-bottom: 1em;
-    }
-
-    /* Give some margin for nav-items when they're in the dropdown! */
-    .nav-item {
-        margin-left: 22px;
-    }
-
-    .mobile-warning {
-        visibility: visible;
-
-    }
-}
 
 /* Adjust row styles */
-.row {
+.border-row {
     padding: 10px;
     border-bottom: 2px solid #a5a1a1;
     /* Add a 1px solid line at the bottom of each row */
@@ -135,4 +112,68 @@ body {
 
 .quote p {
     font-size: 16px;
+}
+
+
+.carousel-item img {
+    object-fit: contain;
+    object-position: center;
+    height: 60vh;
+    /* overflow: hidden; */
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-caption {
+    background-color: #cccccc36;
+    color: black;
+    width: 100%;
+    left: 0px !important;
+    position: relative !important;
+    /* margin-top: 5px; */
+    top: 0px;
+}
+
+.carousel-caption h5 {
+    color: black;
+}
+
+.carousel-caption p {
+    color: rgb(65, 64, 64);
+}
+
+.btn {
+    margin: 10px;
+}
+
+
+/* Override the rounded corners for mobile screens */
+@media (max-width: 768px) {
+    .graph-writeup {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .graph-wrapper {
+        border-right: none;
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: 1em;
+    }
+
+    /* Give some margin for nav-items when they're in the dropdown! */
+    .nav-item {
+        margin-left: 22px;
+    }
+
+    .mobile-warning {
+        visibility: visible;
+    }
+
+
+    .carousel-item img {
+        height: 30vh;
+    }
 }
